@@ -1,0 +1,29 @@
+{
+  "name": "RegionalAttribute",
+  "base": "Model",
+  "strict": true,
+  "idInjection": false,
+  "properties": {
+    "region": {
+      "type": "string",
+      "id": 1,
+      "required": true
+    },
+    "stringValue": {
+      "type": "string",
+      "required": false
+    },
+    "numberValue": {
+      "type": "number",
+      "required": false
+    },
+    "dateValue": {
+      "type": "date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "productName": {
+      "type": "embedsMany",
+      "model": "LocalizedAttribute",
+      "foreignKey": "",
+      "property": "name",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "productDescription": {
+      "type": "embedsMany",
+      "model": "LocalizedAttribute",
+      "foreignKey": "locale",
+      "property": "description",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "productStockQuantity": {
+      "type": "embedsMany",
+      "model": "RegionalAttribute",
+      "foreignKey": "region",
+      "property": "stockQuantity",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "productCustomAttributes": {
+      "type": "embedsMany",
+      "model": "CustomAttribute",
+      "foreignKey": "name",
+      "property": "customAttributes",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

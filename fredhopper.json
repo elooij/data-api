@@ -1,0 +1,11 @@
+{
+  "ids": {
+    "product": 2,
+    "Product": 5
+  },
+  "models": {
+    "Product": {
+      "4": "{\"name\":[{\"locale\":\"en-GB\",\"stringValue\":\"Superstar\"}],\"description\":[{\"locale\":\"en-GB\",\"stringValue\":\"description of a Superstar\"}],\"stockQuantity\":[{\"region\":\"EMEA\",\"numberValue\":100}],\"customAttributes\":[{\"name\":\"string\",\"localizedValue\":[{\"locale\":\"string\",\"stringValue\":\"string\",\"numberValue\":0,\"dateValue\":\"2018-11-29T10:46:08.295Z\"}],\"regionalValue\":[{\"region\":\"string\",\"stringValue\":\"string\",\"numberValue\":0,\"dateValue\":\"2018-11-29T10:46:08.295Z\"}]}],\"id\":4}"
+    }
+  }
+}

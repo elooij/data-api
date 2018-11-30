@@ -1,0 +1,40 @@
+{
+  "name": "CustomAttribute",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "id": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "localizedAttributeValue": {
+      "type": "embedsMany",
+      "model": "LocalizedAttribute",
+      "foreignKey": "locale",
+      "property": "localizedValue",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "reginonalAttributeValue": {
+      "type": "embedsMany",
+      "model": "RegionalAttribute",
+      "foreignKey": "region",
+      "property": "regionalValue",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
